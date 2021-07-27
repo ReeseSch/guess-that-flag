@@ -1,4 +1,4 @@
-const flags = require('./db.json')
+const flags = require('/db.json')
 
 module.exports = {
     getFlag: (req, res) => {
