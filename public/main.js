@@ -51,6 +51,11 @@ function createFlagDisplay(flag) {
 
 
 submitBtn.addEventListener('click', submitHandler)
+answerZone.addEventListener('keypress', function(e) {
+    if (e.keyCode === 13) {
+        submitBtn.click()
+    }
+})
 
 function submitHandler(e) {
     if (answerZone.value.toLowerCase() === flagAnswer.toLowerCase()) {
