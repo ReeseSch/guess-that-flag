@@ -15,7 +15,7 @@ app.use(cors())
 
 app.get('/api/flags', ctrl.getFlag)
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../index.html'))
+    res.sendFile(path.join(__dirname, 'public/index.html'))
 })
 
 
